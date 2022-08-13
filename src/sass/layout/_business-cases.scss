@@ -23,18 +23,39 @@
   &__list {
     display: flex;
     flex-direction: column;
-    --card-colum: 0;
-    --card-item: 1;
-    --gap-left: 0;
     --gap-top: 8px;
+    @include mq(tab) {
+      flex-direction: row;
+
+      --card-colum: 2;
+      --card-item: 3;
+      --gap-left: 18px;
+      --gap-top: 18px;
+    }
+    @include mq(desk) {
+      --gap-left: 24px;
+      --gap-top: 20px;
+    }
   }
 
   &__item {
     --card-colum: 1;
     --card-item: 2;
+    --gap-top: 8px;
+    @include mq(tab) {
+      --card-colum: 2;
+      --card-item: 3;
+      --gap-left: 18px;
+      --gap-top: 18px;
+    }
+    @include mq(desk) {
+      --gap-left: 24px;
+      --gap-top: 20px;
+    }
   }
 
   &__img {
+    display: block;
     flex-grow: 1;
     object-fit: cover;
   }
