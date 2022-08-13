@@ -17,6 +17,7 @@
     width: 100%;
     @include mq(tab) {
       width: 50%;
+      height: 100%;
     }
   }
   &__thumb--sec {
@@ -28,6 +29,11 @@
     padding-bottom: 40px;
     @include mq(tab) {
       width: 50%;
+      padding: 32px 40px;
+    }
+    @include mq(desk) {
+      height: 460px;
+      padding: 20px;
     }
   }
 
@@ -43,6 +49,8 @@
     @include mq(tab) {
       left: 0;
       translate: 0;
+      width: 50%;
+      height: 100%;
     }
   }
 
