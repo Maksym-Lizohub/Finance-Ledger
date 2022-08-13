@@ -1,6 +1,8 @@
 .header {
   display: flex;
   position: fixed;
+  z-index: 1;
+
   top: 27px;
   left: 50%;
   translate: -50%;

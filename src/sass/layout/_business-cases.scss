@@ -1,0 +1,43 @@
+.section {
+  &__title {
+  }
+}
+.business-cases {
+  &__container {
+  }
+
+  &__thumb {
+    &--sec {
+    }
+  }
+
+  &__subtitle {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    --card-colum: 0;
+    --card-item: 1;
+    --gap-left: 0;
+    --gap-top: 8px;
+  }
+
+  &__item {
+    --card-colum: 1;
+    --card-item: 2;
+  }
+
+  &__img {
+    flex-grow: 1;
+    object-fit: cover;
+  }
+}
+.container {
+}

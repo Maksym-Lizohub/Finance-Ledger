@@ -1,26 +1,19 @@
 .hero {
-  padding-top: 142px;
-  padding-bottom: 96px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('../images/home/hero-mob.jpg');
-  @include mq(retina) {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 142px;
+    padding-bottom: 96px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url('../images/home/hero-mob@2x.jpg');
-  }
-  @include mq(tab) {
-    padding-top: 407px;
-    padding-bottom: 410px;
+      url('../images/home/hero-mob.jpg');
     @include mq(retina) {
       background-image: linear-gradient(
           0deg,
@@ -29,24 +22,30 @@
         ),
         url('../images/home/hero-mob@2x.jpg');
     }
-  }
-  @include mq(desk) {
-    padding-top: 279px;
-    padding-bottom: 282px;
-    @include mq(retina) {
-      background-image: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
-        ),
-        url('../images/home/hero-mob@2x.jpg');
+    @include mq(tab) {
+      padding-top: 407px;
+      padding-bottom: 410px;
+      @include mq(retina) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('../images/home/hero-mob@2x.jpg');
+      }
     }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mq(desk) {
+      padding-top: 279px;
+      padding-bottom: 282px;
+      @include mq(retina) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('../images/home/hero-mob@2x.jpg');
+      }
+    }
   }
 
   &__inner {
