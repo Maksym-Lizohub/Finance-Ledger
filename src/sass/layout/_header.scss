@@ -2,10 +2,14 @@
   display: flex;
   position: fixed;
   z-index: 1;
+  width: 100%;
+  padding: 20px 0;
 
-  top: 27px;
   left: 50%;
   translate: -50%;
+  @include mq(desk) {
+    padding: 12px 0;
+  }
   &__container {
     display: flex;
 
@@ -20,6 +24,9 @@
   &__logo {
     display: flex;
     align-items: center;
+    @include mq(mob-only) {
+      margin-bottom: 12px;
+    }
   }
 }
 .container {
@@ -33,18 +40,22 @@
 
   &__text {
     color: var(--text-color-white);
-    margin-left: 5px;
     font-size: 32px;
     line-height: 1.31;
     @include mq(tab) {
-      margin-left: 10px;
+      margin-right: 9px;
       font-size: 35px;
       line-height: 1.2;
     }
     &--accent {
       color: var(--main-grean-color);
+      margin-left: 5px;
+      font-size: 32px;
+      line-height: 1.31;
       @include mq(tab) {
-        margin-right: 9px;
+        margin-left: 10px;
+        font-size: 35px;
+        line-height: 1.2;
       }
     }
   }

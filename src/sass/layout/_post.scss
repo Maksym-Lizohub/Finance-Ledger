@@ -1,43 +1,45 @@
-.section.we-provide {
-  background-color: var(--main-grean-color);
+.section {
   &__title {
   }
 }
-.we-provide {
+.post {
+  background-color: var(--blue-color);
   &__container {
     position: relative;
     padding-bottom: 40px;
     @include mq(tab) {
       padding-bottom: 0px;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__thumb {
+    &--img {
+      height: 220px;
+      width: 100%;
+      @include mq(tab) {
+        width: 50%;
+        height: 100%;
+      }
+    }
+
+    &--sec {
       display: flex;
-      flex-direction: row;
-    }
-  }
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 40px;
 
-  &__thumb--img {
-    height: 220px;
-    width: 100%;
-    @include mq(tab) {
-      width: 50%;
-      height: 100%;
-    }
-  }
-  &__thumb--sec {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 40px;
-
-    @include mq(tab) {
-      margin-top: 0px;
-      width: 50%;
-      padding: 32px 0px 32px 40px;
-    }
-    @include mq(desk) {
-      justify-content: center;
-      height: 460px;
-      padding: 20px 0px 20px 20px;
+      @include mq(tab) {
+        margin-top: 0px;
+        width: 50%;
+        padding: 32px 40px 32px 0;
+      }
+      @include mq(desk) {
+        justify-content: center;
+        height: 460px;
+        padding: 20px 20px 20px 0;
+      }
     }
   }
 
@@ -51,14 +53,14 @@
     width: 320px;
     object-fit: cover;
     @include mq(tab) {
-      left: 0;
+      right: 0;
       translate: 0;
       width: 50%;
       height: 100%;
     }
   }
 
-  &__subtitle {
+  &__date {
     margin-bottom: 8px;
 
     font-family: 'Open Sans', sans-serif;
@@ -99,6 +101,6 @@
 
     font-size: 18px;
     color: var(--text-color-white);
-    background-color: var(--main-grean-color);
+    background-color: var(--blue-color);
   }
 }
