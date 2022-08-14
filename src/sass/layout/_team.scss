@@ -52,6 +52,7 @@
     display: flex;
     flex-direction: column;
     --gap-top: 8px;
+
     @include mq(tab) {
       flex-direction: row;
 
@@ -79,6 +80,17 @@
     @include mq(desk) {
       --gap-left: 24px;
       --gap-top: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      .social__list {
+        display: flex;
+        background-color: var(--gradient);
+      }
+      .team__thumb {
+        box-shadow: var(--box-shadow);
+      }
     }
   }
 
@@ -121,14 +133,29 @@
 }
 .social {
   &__list {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   &__item {
   }
-
-  &__link {
+  &__item:not(:last-child) {
+    margin-right: 25px;
+    @include mq(tab) {
+      margin-right: 15px;
+    }
   }
 
   &__icon {
+    fill: var(--main-white-color);
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      .social__icon {
+        fill: rgba(255, 255, 255, 0.8);
+      }
+    }
   }
 }

@@ -7,6 +7,9 @@
 
   left: 50%;
   translate: -50%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
   @include mq(desk) {
     padding: 12px 0;
   }
