@@ -100,5 +100,11 @@
     font-size: 18px;
     color: var(--text-color-white);
     background-color: var(--main-grean-color);
+    transition: color var(--transition), background-color var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--main-grean-color);
+      background-color: var(--text-color-white);
+    }
   }
 }

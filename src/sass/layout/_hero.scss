@@ -104,10 +104,18 @@
     height: 45px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 
     font-size: 18px;
     color: var(--text-color-white);
     background-color: var(--main-grean-color);
+
+    opacity: 1;
+    transition: opacity var(--transition);
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
   }
   .button__icon {
     display: none;
