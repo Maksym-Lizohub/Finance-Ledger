@@ -1,0 +1,2 @@
+const e=document.querySelector(".js-form"),t=document.querySelector(".js-warning");e.addEventListener("submit",(function(a){const{name:s,email:n}=a.currentTarget.elements;if(a.preventDefault(),""===n.value||""===s.value)t.classList.add("active");else{"active"===t.classList&&t.classList.remove("active");let a={[n.name]:n.value,[s.name]:s.value};console.log(a),e.reset()}}));
+//# sourceMappingURL=index.dd3e0e76.js.map
