@@ -18,7 +18,9 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "materialize-css": "^1.0.0",
     "modern-normalize": "^1.1.0",
+    "sass-extras": "^1.0.0",
     "simplelightbox": "^2.10.3",
     "smooth-scrollbar": "^8.7.5"
   },

@@ -1,4 +1,5 @@
 /* @import '/node_modules/materialize-css/sass/materialize.scss'; */
+/* @import './node_modules/sass-extras/index'; */
 @import './base/fonts';
 @import './utils/mixin';
 @import './utils/placeholder';
@@ -16,12 +17,12 @@
 @import './components/slider'; */
 
 @import './layout/header';
-@import './layout/hero';
+/* @import './layout/hero';
 @import './layout/we-provide';
 @import './layout/cases';
 @import './layout/post';
 @import './layout/team';
 @import './layout/callback';
 @import './components/form';
-@import './layout/footer';
+@import './layout/footer'; */
 /* @import './components/lightbox'; */
