@@ -1,6 +1,6 @@
 .footer {
   padding: 20px 0;
-  background-color: rgb(77, 77, 77);
+  background-color: var(--text-color-dark);
   &__container {
     display: flex;
     flex-direction: column;

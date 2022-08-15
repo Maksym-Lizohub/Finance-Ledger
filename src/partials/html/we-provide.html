@@ -1,11 +1,39 @@
 <section class="section we-provide" id="we-provide">
   <div class="container we-provide__container">
     <div class="we-provide__thumb--img">
-      <img
-        class="we-provide__img"
-        src="./images/home/people.jpg"
-        alt="Our team"
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/provide/provide-desk.jpg    1x,
+            ./images/provide/provide-desk@2x.jpg 2x
+          "
+          media="(min-width:1360px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/provide/provide-tab.jpg    1x,
+            ./images/provide/provide-tab@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/provide/provide-mob.jpg    1x,
+            ./images/provide/provide-mob@2x.jpg 2x
+          "
+          media="(max-width:767px)"
+          type="image/jpeg"
+        />
+        <img
+          class="we-provide__img"
+          src="./images/provide/provide-mob.jpg"
+          width="320"
+          height="220"
+          alt="Our team"
+        />
+      </picture>
     </div>
     <div class="we-provide__thumb--sec">
       <h3 class="we-provide__subtitle">What you are looking for</h3>

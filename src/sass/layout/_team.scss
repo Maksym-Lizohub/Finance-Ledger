@@ -19,8 +19,8 @@
     }
     box-shadow: none;
     transition: box-shadow var(--transition);
-    scale: 1;
-    transition: scale var(--transition);
+    transform: scale(1);
+    transition: transform var(--transition);
   }
 
   &__subtitle {
@@ -95,7 +95,7 @@
       }
       .team__thumb {
         box-shadow: var(--box-shadow);
-        scale: 1;
+        transform: scale(1.03);
       }
     }
   }
@@ -104,8 +104,6 @@
     display: block;
     flex-grow: 1;
     object-fit: cover;
-    scale: 1;
-    transition: scale var(--transition);
   }
 
   &__social {
